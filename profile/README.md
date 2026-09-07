@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://skillmd.com"><img src="https://cdn.jsdelivr.net/npm/skillmds/assets/skillmd-banner.jpg" alt="SkillMD — the open registry of Agent Skills" width="560"></a>
+  <a href="https://skillmd.com"><img src="https://skillmd.com/brand/banner.png" alt="SkillMD — the open registry of Agent Skills" width="560"></a>
 </p>
 
 <h3 align="center">The open registry of Agent Skills. The registry that lints.</h3>
