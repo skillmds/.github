@@ -19,18 +19,18 @@
 **SkillMD** is where they live. Every skill on [skillmd.com](https://skillmd.com) is linted against the format, security-scanned for what it can do (scripts, network, secrets), pinned to a commit, and shown with its verdict and independent scanner results. Installing writes files and does nothing else.
 
 ```bash
-npx skillmds search "pdf"          # search the registry
-npx skillmds add anthropic/pdf     # install into every agent on your machine
-npx skillmds lint ./my-skill       # lint your own before you share it
+npx get-skill search "pdf"          # search the registry
+npx get-skill add anthropic/pdf     # install into every agent on your machine
+npx get-skill lint ./my-skill       # lint your own before you share it
 ```
 
 ### What's here
 
 | Repo | What it is |
 |---|---|
-| [**skillmd**](https://github.com/skillmds/skillmd) | The open-source toolchain (MIT): the `skillmd` CLI, the `skillmds` MCP server, the GitHub Action and the `@skillmd/core` SKILL.md engine the registry itself runs. |
+| [**skillmd**](https://github.com/skillmds/skillmd) | The open-source toolchain (MIT): the `get-skill` CLI and MCP server, the GitHub Action and the `@skillmds/core` SKILL.md engine the registry itself runs. |
 
-npm: [`skillmds`](https://www.npmjs.com/package/skillmds) · [`@skillmd/core`](https://www.npmjs.com/package/@skillmd/core) · MCP registry: `com.skillmd/skillmd` · hosted MCP: `https://api.skillmd.com/mcp`
+npm: [`get-skill`](https://www.npmjs.com/package/get-skill) · [`@skillmds/core`](https://www.npmjs.com/package/@skillmds/core) · MCP registry: `com.skillmd/skillmd` · hosted MCP: `https://api.skillmd.com/mcp`
 
 ### Find skills
 
@@ -41,7 +41,7 @@ npm: [`skillmds`](https://www.npmjs.com/package/skillmds) · [`@skillmd/core`](h
 ### Publish yours
 
 ```bash
-npx skillmds publish ./my-skill
+npx get-skill publish ./my-skill
 ```
 
 You get a page at `skillmd.com/skills/<you>/<name>`, a safety verdict, one-command installs for every agent, and a live README badge. Guides: [Publishing a skill](https://skillmd.com/blog/publishing-a-skill-to-the-registry) · [Writing skills that get used](https://skillmd.com/blog/writing-skills-that-get-used) · [The SKILL.md format](https://skillmd.com/docs/format)
